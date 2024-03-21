@@ -43,12 +43,12 @@ My proficiency includes HTML, CSS, SCSS, JavaScript, TypeScript, Tailwind CSS, R
   },
 
   projects: [
-    // {
-    //   title: "Portfolio",
-    //   isFeatured: true,
-    //   thumbnail: "/assets/images/astro-portfolio.png",
-    //   githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-    //   liveUrl: "https://astro-portfolio-uzair.vercel.app/",
-    // },
+   {
+    title: "Portfolio",
+    isFeatured: true,
+    thumbnail: "/assets/images/astro-portfolio.png",
+    githubUrl: "https://github.com/RoParis9/astro-portfolio",
+    liveUrl: "https://rodrigo-paris-portfolio.vercel.app/"
+   },
   ],
 };
