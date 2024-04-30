@@ -3,10 +3,11 @@ export const info = {
   name: "Rodrigo Paris",
   jobDescription: "Web Developer",
   about: `
-  I'm a São Paulo-based software developer with 2 years of experience in the Computer Software industry, specializing in both Front-end and Back-end Development.
-My proficiency includes HTML, CSS, SCSS, JavaScript, TypeScript, Tailwind CSS, React JS, Next JS for front-end, and Node JS, Express JS, Java, Spring Boot, NoSQL(MongoDB and Redis) and SQL(Postgres) for back-end development.   
-   Having a proven track record of successfully delivering web projects from inception, 
-   I am committed to ongoing learning and the exploration of emerging technologies.
+I am a seasoned software developer based in São Paulo with two years of hands-on experience in the Computer Software industry. My expertise spans across both Front-end and Back-end Development, where I excel in crafting robust web solutions.
+
+In the realm of Front-end Development, I am proficient in HTML, CSS, SCSS, JavaScript, TypeScript, and adept at utilizing frameworks such as Tailwind CSS, React JS, and Next JS. On the Back-end front, I am well-versed in Node JS, Express JS, Java, and Spring Boot. My database skills encompass both SQL (Postgres) and NoSQL (MongoDB and Redis) technologies.
+
+With a demonstrated history of delivering successful web projects from conception to deployment, I am deeply committed to continuous learning and staying abreast of emerging technologies.
   `,
 
   experience: [
