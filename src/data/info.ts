@@ -33,7 +33,7 @@ With a demonstrated history of delivering successful web projects from conceptio
       location: "São Paulo, São Paulo, ",
       startDate: "2019",
       endDate: "2020",
-      description: ["Matriculation,  Computer Science"],
+      description: ["Undergrad,  Computer Science"],
     },
   ],
 
@@ -50,6 +50,13 @@ With a demonstrated history of delivering successful web projects from conceptio
     thumbnail: "/assets/images/astro-portfolio.png",
     githubUrl: "https://github.com/RoParis9/astro-portfolio",
     liveUrl: "https://rodrigo-paris-portfolio.vercel.app/"
+   },
+   {
+    title: "Jobify",
+    isFeatured: true,
+    thumbnail: "/assets/images/jobify-1.png",
+    githubUrl: "https://github.com/RoParis9/jobify-page",
+    liveUrl: "https://jobify-page.vercel.app/"
    },
   ],
 };
