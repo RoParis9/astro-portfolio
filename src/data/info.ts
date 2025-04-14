@@ -3,7 +3,7 @@ export const info = {
   name: "Rodrigo Paris",
   jobDescription: "Web Developer",
   about: `
-I am a seasoned software developer based in São Paulo with two years of hands-on experience in the Computer Software industry. <My expertise spans across both Front-end and Back-end Development, where I excel in crafting robust web solutions.
+I am a seasoned software developer based in São Paulo with two years of hands-on experience in the Computer Software industry. My expertise spans across both Front-end and Back-end Development, where I excel in crafting robust web solutions.
 
 In the realm of Front-end Development, I am proficient in HTML, CSS, SCSS, JavaScript, TypeScript, and adept at utilizing frameworks such as Tailwind CSS, React JS, and Next JS. On the Back-end front, I am well-versed in Node JS, Express JS. My database skills encompass both SQL (Postgres) and NoSQL (MongoDB and Redis) technologies.
 
@@ -22,21 +22,19 @@ With a demonstrated history of delivering successful web projects from conceptio
         "- Data Communication: Utilized Axios for HTTP requests and React Query to optimize API calls and manage state.",
         "- Cache & Performance: Implemented Redis for caching and performance optimization, ensuring fast responses in high-demand environments.",
         "- System Architecture: Worked on Backend-for-Frontend (BFF) solutions to ensure efficient communication between front-end and back-end.",
-        "- Asynchronous Messaging: Integrated RabbitMQ for managing asynchronous communication between microservices, ensuring high reliability and performance." 
+        "- Asynchronous Messaging: Integrated RabbitMQ for managing asynchronous communication between microservices, ensuring high reliability and performance."
       ]
     },
     {
       name: "Freelancer Developer",
       location: "São Paulo, Brasil",
-      startDate: "Aug 2022",
-      endDate: "Present",
+      startDate: "May 2023",
+      endDate: "Oct 2024",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating with backend APIs.",
-        "- Implementing code in compliance with relevant design and architectural guidelines.",
-        "- Documenting, testing, deploying, maintaining, and supporting platforms, applications, databases, and solutions.",
-        "- Enhancing code through improvements and refactoring.",
-        "- Upholding best practices and rules."
+        "- Developed websites and landing pages using Next.js, React, JavaScript, HTML, and CSS.",
+        "- Implemented responsive and SEO-optimized designs to ensure a great user experience.",
+        "- Used Python for web scraping and data integration into web applications.",
+        "- Collaborated directly with clients to gather requirements and deliver customized solutions."
       ],
     },
   ],
