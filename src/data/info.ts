@@ -70,5 +70,12 @@ With a demonstrated history of delivering successful web projects from conceptio
       githubUrl: "https://github.com/RoParis9/jobify-page",
       liveUrl: "https://jobify-page.vercel.app/"
     },
+    {
+      title: "GranaTech",
+      isFeatured: true,
+      thumbnail: "assets/images/Granatech.jpg",
+      // githubUrl: "https://app.granatech.com.br",
+      liveUrl: "https://app.granatech.com.br"
+    },
   ],
 };
