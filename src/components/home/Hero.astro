@@ -2,12 +2,15 @@
 import { IHeroProps } from "@types";
 
 const { name, about } = Astro.props as IHeroProps;
+// Handle both string and object types for name and about
+const displayName = typeof name === 'string' ? name : name.en;
+const displayAbout = typeof about === 'string' ? about : about.en;
 ---
 
 <section>
-  <p class="dark:text-light mt-[117px]">Hey, I’m</p>
-  <h1 class="pb-[10px]">{name}</h1>
-  <p class="dark:text-light text-base mb-16 z-0">
-    {about}
+  <p class="dark:text-light mt-[117px]">Hey, I'm</p>
+  <h1 id="hero-name" class="pb-[10px]">{displayName}</h1>
+  <p id="hero-about" class="dark:text-light text-base mb-16 z-0">
+    {displayAbout}
   </p>
 </section>

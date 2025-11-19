@@ -13,6 +13,13 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   }
   return accumulator;
 }, []);
+
+// Default to English for initial render
+const defaultLang = "en";
+const name = typeof info.name === 'string' ? info.name : info.name[defaultLang];
+const about = typeof info.about === 'string' ? info.about : info.about[defaultLang];
+const experience = Array.isArray(info.experience) ? info.experience : info.experience[defaultLang];
+const education = Array.isArray(info.education) ? info.education : info.education[defaultLang];
 ---
 
 <!DOCTYPE html>
@@ -20,7 +27,7 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   <head>
     <MetaHead
       title={"Portfolio"}
-      description={info.about}
+      description={about}
       ogImageUrl={"/assets/images/profile.png"}
     />
   </head>
@@ -28,10 +35,10 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   <body>
     <Layout>
       <Hero name={info.name} about={info.about} />
-      <Experience title={"EXPERIENCE"} details={info.experience} />
-      <Experience title={"EDUCATION"} details={info.education} />
+      <Experience title={"EXPERIENCE"} details={experience} />
+      <Experience title={"EDUCATION"} details={education} />
       <section>
-        <h2 class="w-[15rem] dark:text-light mt-16">PROJECTS</h2>
+        <h2 data-i18n="projects.title" class="w-[15rem] dark:text-light mt-16">PROJECTS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
     </Layout>
