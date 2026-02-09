@@ -131,25 +131,67 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
 
   projects: [
     {
-      title: "Portfolio",
+      title: "ArchGen",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/RoParis9/astro-portfolio",
-      liveUrl: "https://rodrigo-paris-portfolio.vercel.app/"
+      thumbnail: "/assets/images/ArchGen/ArchGen.png",
+      //githubUrl: "https://github.com/RoParis9/astro-portfolio",
+      //liveUrl: "https://rodrigo-paris-portfolio.vercel.app/",
+      images: [
+        "/assets/images/ArchGen/ArchGen.png",
+        "/assets/images/ArchGen/ArchGen2.png",
+        "/assets/images/ArchGen/ArchGen3.png",
+      ]
     },
     {
-      title: "Jobify",
+      title: "DataChat",
       isFeatured: true,
-      thumbnail: "/assets/images/jobify-1.png",
-      githubUrl: "https://github.com/RoParis9/jobify-page",
-      liveUrl: "https://jobify-page.vercel.app/"
+      thumbnail: "/assets/images/DataChat/DataChat1.png",
+      githubUrl: "https://github.com/RoParis9/DataChat",
+      //liveUrl: "",
+      images: [
+        "/assets/images/DataChat/DataChat1.png",
+        "/assets/images/DataChat/DataChat2.png",
+        "/assets/images/DataChat/DataChat3.png",
+        "/assets/images/DataChat/DataChat4.png",
+        "/assets/images/DataChat/DataChat5.png"
+      ]
     },
     {
       title: "GranaTech",
       isFeatured: true,
-      thumbnail: "assets/images/Granatech.jpg",
+      thumbnail: "/assets/images/GranaTech/GranaTech.png",
       // githubUrl: "https://app.granatech.com.br",
-      liveUrl: "https://app.granatech.com.br"
+      liveUrl: "https://app.granatech.com.br",
+      images: [
+        "/assets/images/GranaTech/GranaTech.png",
+        "/assets/images/GranaTech/GranaTech2.png",
+        "/assets/images/GranaTech/GranaTech3.png",
+        "/assets/images/GranaTech/GranaTech4.png",
+        "/assets/images/GranaTech/GranaTech5.png",
+        "/assets/images/GranaTech/GranaTech6.png",
+        "/assets/images/GranaTech/GranaTech7.png",
+        "/assets/images/GranaTech/GranaTech8.png",
+        "/assets/images/GranaTech/GranaTech9.png",
+        "/assets/images/GranaTech/GranaTech10.png",
+        "/assets/images/GranaTech/GranaTech11.png",
+        "/assets/images/GranaTech/GranaTech12.png"
+      ]
+    },
+    {
+      title: "Clubi",
+      isFeatured: true,
+      thumbnail: "/assets/images/Clubi/Clubi.png",
+      //githubUrl: "https://github.com/RoParis9/jobify-page",
+      //liveUrl: "https://jobify-page.vercel.app/",
+      images: [
+        "/assets/images/Clubi/Clubi.png",
+        "/assets/images/Clubi/Clubi 2.png",
+        "/assets/images/Clubi/Clubi 3.png",
+        "/assets/images/Clubi/Clubi 4.png",
+        "/assets/images/Clubi/Clubi 5.png",
+        "/assets/images/Clubi/Clubi 6.png",
+        "/assets/images/Clubi/Clubi 7.png"
+      ]
     },
   ],
 };

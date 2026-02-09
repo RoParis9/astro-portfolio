@@ -1,0 +1,217 @@
+---
+const { images, modalId, title } = Astro.props;
+---
+
+<dialog
+  id={modalId}
+  class="backdrop:bg-black/80 bg-transparent p-0 m-auto max-w-4xl w-full rounded-xl overflow-hidden shadow-2xl open:animate-fade-in closed:animate-fade-out"
+>
+  <div class="relative bg-[#1a1a1a] text-white h-auto max-h-[90vh] flex flex-col">
+    <!-- Header -->
+    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+      <h3 class="text-xl font-bold">{title}</h3>
+      <button
+        class="close-modal text-gray-400 hover:text-white transition-colors"
+        data-target={modalId}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"
+          ></line></svg
+        >
+      </button>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative flex-1 overflow-hidden group">
+      <div
+        class="carousel-track flex transition-transform duration-500 ease-in-out h-full items-center"
+        id={`track-${modalId}`}
+        data-current-index="0"
+      >
+        {
+          images.map((img, index) => (
+            <div class="min-w-full h-full flex items-center justify-center p-4">
+              <img
+                src={img}
+                alt={`${title} - Image ${index + 1}`}
+                class="max-h-[70vh] max-w-full object-contain rounded-lg shadow-lg"
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Controls -->
+      {
+        images.length > 1 && (
+          <>
+            <button
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors opacity-0 group-hover:opacity-100 prev-slide"
+              data-target={`track-${modalId}`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors opacity-0 group-hover:opacity-100 next-slide"
+              data-target={`track-${modalId}`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+            
+            <!-- Indicators -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {images.map((_, index) => (
+                <button
+                  class={`w-2 h-2 rounded-full transition-colors ${index === 0 ? "bg-white" : "bg-gray-500"}`}
+                  data-index={index}
+                  data-target={`track-${modalId}`}
+                />
+              ))}
+            </div>
+          </>
+        )
+      }
+    </div>
+  </div>
+</dialog>
+
+<script>
+  // Modal Logic
+  const closeButtons = document.querySelectorAll(".close-modal");
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const modalId = btn.getAttribute("data-target");
+      const modal = document.getElementById(modalId) as HTMLDialogElement;
+      if (modal) {
+        modal.close();
+        // Reset carousel on close
+        const track = modal.querySelector(".carousel-track") as HTMLElement;
+           if(track) {
+               updateCarousel(track, 0);
+           }
+      }
+    });
+  });
+
+  // Close on click outside
+  const dialogs = document.querySelectorAll("dialog");
+  dialogs.forEach((dialog) => {
+    dialog.addEventListener("click", (e) => {
+      const rect = dialog.getBoundingClientRect();
+      const isInDialog =
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width;
+      if (!isInDialog) {
+        dialog.close();
+                 // Reset carousel on close
+        const track = dialog.querySelector(".carousel-track") as HTMLElement;
+           if(track) {
+               updateCarousel(track, 0);
+           }
+      }
+    });
+  });
+
+  // Carousel Logic
+  function updateCarousel(track, index) {
+      if (!track) return;
+    const slides = track.children;
+    const count = slides.length;
+    
+    // Wrap around logic
+    if (index < 0) index = count - 1;
+    if (index >= count) index = 0;
+
+    track.dataset.currentIndex = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    
+    // Update indicators
+    const modalId = track.id.replace('track-', '');
+    const modal = document.getElementById(modalId);
+    if(modal) {
+        const indicators = modal.querySelectorAll(`[data-target="${track.id}"][data-index]`);
+        indicators.forEach((indicator: any) => {
+             if (parseInt(indicator.dataset.index) === index) {
+                indicator.classList.remove('bg-gray-500');
+                indicator.classList.add('bg-white');
+             } else {
+                 indicator.classList.add('bg-gray-500');
+                indicator.classList.remove('bg-white');
+             }
+        });
+    }
+  }
+
+  const prevButtons = document.querySelectorAll(".prev-slide");
+  const nextButtons = document.querySelectorAll(".next-slide");
+
+  prevButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation(); // prevent modal close
+      const trackId = btn.getAttribute("data-target");
+      const track = document.getElementById(trackId);
+      if (track) {
+          const currentIndex = parseInt(track.dataset.currentIndex || '0');
+          updateCarousel(track, currentIndex - 1);
+      }
+    });
+  });
+
+  nextButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+         e.stopPropagation(); // prevent modal close
+      const trackId = btn.getAttribute("data-target");
+      const track = document.getElementById(trackId);
+      if (track) {
+          const currentIndex = parseInt(track.dataset.currentIndex || '0');
+           updateCarousel(track, currentIndex + 1);
+      }
+    });
+  });
+</script>
+
+<style>
+  dialog::backdrop {
+    animation: fade-in 0.3s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
