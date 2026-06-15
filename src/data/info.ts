@@ -9,12 +9,12 @@ export const info = {
     pt: "Desenvolvedor Full-Stack"
   },
   about: {
-    en: `I am a seasoned software developer based in São Paulo with two years of hands-on experience in the Computer Software industry. My expertise spans across both Front-end and Back-end Development, where I excel in crafting robust web solutions.
+    en: `I am a seasoned software developer based in São Paulo with three years of hands-on experience in the Computer Software industry. My expertise spans across both Front-end and Back-end Development, where I excel in crafting robust web solutions.
 
 In the realm of Front-end Development, I am proficient in HTML, CSS, SCSS, JavaScript, TypeScript, and adept at utilizing frameworks such as Tailwind CSS, React JS, and Next JS. On the Back-end front, I am well-versed in Node JS, Express JS. My database skills encompass both SQL (Postgres) and NoSQL (MongoDB and Redis) technologies.
 
 With a demonstrated history of delivering successful web projects from conception to deployment, I am deeply committed to continuous learning and staying abreast of emerging technologies.`,
-    pt: `Sou um desenvolvedor de software experiente baseado em São Paulo com dois anos de experiência prática na indústria de Software. Minha expertise abrange tanto o Desenvolvimento Front-end quanto Back-end, onde me destaco na criação de soluções web robustas.
+    pt: `Sou um desenvolvedor de software experiente baseado em São Paulo com três anos de experiência prática na indústria de Software. Minha expertise abrange tanto o Desenvolvimento Front-end quanto Back-end, onde me destaco na criação de soluções web robustas.
 
 No campo do Desenvolvimento Front-end, sou proficiente em HTML, CSS, SCSS, JavaScript, TypeScript, e habilidoso no uso de frameworks como Tailwind CSS, React JS e Next JS. No Back-end, tenho conhecimento em Node JS, Express JS. Minhas habilidades em banco de dados abrangem tecnologias SQL (Postgres) e NoSQL (MongoDB e Redis).
 
@@ -24,37 +24,52 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
   experience: {
     en: [
       {
-        name: "Freelancer",
-        location: "São Paulo, Brasil",
-        startDate: "Aug/2025",
+        name: "Oliver Insurance Software - Software Engineer",
+        location: "British Columbia, Canada (Remote)",
+        startDate: "Feb/2026",
         endDate: "Present",
         description: [
-          "Web Platform: Developed a modern system in Next.js with authentication via Supabase, real-time data management, and advanced UI using Radix, TailwindCSS, and ShadCN.",
-          "Mobile App: Built a cross-platform app in React Native (Expo) with a shared design system in Tamagui and native integration with Supabase backend."
+          "Developing backend services and integration workflows for a Common Layer Application (CLA), a centralized platform orchestrating communication between enterprise systems and external HRIS providers.",
+          "Building parsers and data normalization layers for HRIS integrations using NestJS and TypeScript.",
+          "Working with asynchronous communication and event-driven workflows using AWS EventBridge and SQS.",
+          "Implementing unit tests and backend reliability improvements; contributing to CLA architecture for system interoperability and shared business operations.",
+          "Working with Oracle databases, Docker, and cloud-native backend infrastructure; using AI-assisted development workflows to improve engineering productivity."
         ]
       },
       {
-        name: "GranaTech - Crédito Popular",
-        location: "São Paulo, Brasil",
+        name: "Clubi - Full Stack Web Developer",
+        location: "São Paulo, Brasil (Remote)",
+        startDate: "Aug/2025",
+        endDate: "Feb/2026",
+        description: [
+          "Web Platform: Developed a modern platform using Next.js with Supabase authentication, RBAC, user management, real-time features, PostgreSQL functions, file storage, and admin tools; built UI with Radix UI, Tailwind CSS, and ShadCN/UI.",
+          "Mobile Application: Built a cross-platform app in React Native (Expo) with a Tamagui-based design system, integrated with Supabase for auth, real-time sync, chat, and permissions.",
+          "Architecture & Backend: Designed relational database models, functions, triggers, views, and Row Level Security (RLS) policies; implemented real-time communication, auditing, and collaborative features."
+        ]
+      },
+      {
+        name: "GranaTech - Full Stack Software Engineer",
+        location: "São Paulo, Brasil (Remote)",
         startDate: "Oct/2024",
         endDate: "Aug/2025",
         description: [
-          "Front-End Development: Created responsive interfaces with React.js, TypeScript, Chakra UI, Zustand for global state management, and integrated forms with Formik and Yup.",
-          "Back-End Development: Implemented APIs with Node.js and Express, integrated with Prisma for PostgreSQL database management.",
-          "Self-Service Payroll Loans: Developed a self-service system allowing clients to request payroll loans automatically. Generated over R$1.5 million in revenue since launch, reducing manual support and increasing scalability.",
-          "Backend-for-Frontend (BFF) Architecture: Implemented a BFF layer with Node.js and Express to decouple front-end from internal microservices.",
-          "Event-Driven System: Participated in event-driven microservices architecture where services react to external webhooks and communicate asynchronously via RabbitMQ, improving scalability, resilience, and modularity."
+          "Rebuilt the entire fintech platform from scratch to modernize architecture and improve reliability, delivering a high-performance system that reduced latency and increased user satisfaction.",
+          "Front-End: Developed responsive interfaces with React.js, TypeScript, Chakra UI, Zustand, React Query, and Axios.",
+          "Back-End: Built RESTful APIs with Node.js, Express, Prisma, and PostgreSQL; used Redis for caching and performance optimization.",
+          "Self-Checkout Credit System: Created a self-service module enabling clients to independently apply for payroll-deductible loans backed by FGTS.",
+          "Architecture: Designed a Backend-for-Frontend (BFF) layer and integrated RabbitMQ for asynchronous messaging between services.",
+          "Infrastructure: Deployed the frontend to Vercel with custom domain and DNS configuration via Cloudflare; worked with Agile methodologies (Scrum/Kanban) and Jira."
         ]
       },
       {
-        name: "Freelancer",
-        location: "São Paulo, Brasil",
+        name: "Felix CV - Full Stack Software Developer",
+        location: "São Paulo, Brasil (Remote)",
         startDate: "May/2023",
         endDate: "Sep/2024",
         description: [
           "Payments: Implemented a complete subscription and checkout system with Stripe, including automated billing, webhooks, and idempotency.",
           "Infrastructure: Integrated AWS S3 for file upload and storage using presigned URLs with secure bucket configuration.",
-          "Architecture: Developed a modular API with Nest, TypeScript, and MongoDB (NoSQL) integration via Mongoose.",
+          "Architecture: Developed a modular API with NestJS, TypeScript, OracleDB (main database), and MongoDB (NoSQL) integration via Mongoose.",
           "Messaging: Asynchronous communication with RabbitMQ for event processing and notifications.",
           "Integrations: Used OpenAI API for automating responses and text data analysis.",
           "Documentation: Created interactive API documentation with Swagger and configured build and seed pipelines in TypeScript."
@@ -63,40 +78,55 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
     ],
     pt: [
       {
-        name: "Freelancer",
-        location: "São Paulo, Brasil",
-        startDate: "Agosto/2025",
+        name: "Oliver Insurance Software - Software Engineer",
+        location: "Colúmbia Britânica, Canadá (Remoto)",
+        startDate: "Fev/2026",
         endDate: "Atual",
         description: [
-          "Plataforma Web: Desenvolvimento de um sistema moderno em Next.js com autenticação via Supabase, gerenciamento de dados em tempo real e UI avançada com Radix, TailwindCSS e ShadCN.",
-          "Aplicativo Mobile: Criação de um app multiplataforma em React Native (Expo) com design system compartilhado em Tamagui e integração nativa ao backend Supabase."
+          "Desenvolvimento de serviços backend e fluxos de integração para uma Common Layer Application (CLA), plataforma centralizada que orquestra a comunicação entre sistemas corporativos e provedores externos de HRIS.",
+          "Construção de parsers e camadas de normalização de dados para integrações HRIS usando NestJS e TypeScript.",
+          "Trabalho com comunicação assíncrona e fluxos orientados a eventos usando AWS EventBridge e SQS.",
+          "Implementação de testes unitários e melhorias de confiabilidade do backend; contribuição para a arquitetura da CLA voltada à interoperabilidade entre sistemas.",
+          "Trabalho com bancos Oracle, Docker e infraestrutura backend cloud-native; uso de fluxos de desenvolvimento assistidos por IA para aumentar a produtividade."
         ]
       },
       {
-        name: "GranaTech - Crédito Popular",
-        location: "São Paulo, Brasil",
-        startDate: "Outubro/2024",
-        endDate: "Agosto/2025",
+        name: "Clubi - Full Stack Web Developer",
+        location: "São Paulo, Brasil (Remoto)",
+        startDate: "Ago/2025",
+        endDate: "Fev/2026",
         description: [
-          "Desenvolvimento Front-End: Criação de interfaces responsivas utilizando React.js com TypeScript, Chakra UI, Zustand para gerenciamento de estado global e integração com formulários usando Formik e Yup para validações.",
-          "Desenvolvimento Back-End: Implementação de APIs com Node.js e Express, além da integração com Prisma para gestão de banco de dados PostgreSQL.",
-          "Autocontratação de Crédito Consignado: Desenvolvi um sistema de autoatendimento que permitiu aos clientes contratar empréstimos consignados de forma totalmente automatizada. O módulo gerou mais de R$ 1,5 milhão em faturamento desde seu lançamento, reduzindo a necessidade de atendimento manual e aumentando a escalabilidade do sistema.",
-          "Arquitetura Backend-for-Frontend (BFF): Implementei uma camada BFF com Node.js e Express para desacoplar o front-end dos microserviços internos.",
-          "Sistema Orientado a Eventos (Event-Driven): Participei da arquitetura de microserviços orientada a eventos, na qual os serviços reagem a webhooks externos e se comunicam de forma assíncrona via RabbitMQ. Esse modelo aumentou a escalabilidade, a resiliência e a modularidade do sistema."
+          "Plataforma Web: Desenvolvimento de plataforma moderna em Next.js com autenticação Supabase, RBAC, gestão de usuários, recursos em tempo real, funções PostgreSQL, armazenamento de arquivos e ferramentas administrativas; UI com Radix UI, Tailwind CSS e ShadCN/UI.",
+          "Aplicativo Mobile: Criação de app multiplataforma em React Native (Expo) com design system em Tamagui, integrado ao Supabase para autenticação, sincronização em tempo real, chat e permissões.",
+          "Arquitetura & Backend: Modelagem relacional, funções, triggers, views e políticas de Row Level Security (RLS); comunicação em tempo real, auditoria de dados e recursos colaborativos."
         ]
       },
       {
-        name: "Freelancer",
-        location: "São Paulo, Brasil",
-        startDate: "Maio/2023",
-        endDate: "Setembro/2024",
+        name: "GranaTech - Full Stack Software Engineer",
+        location: "São Paulo, Brasil (Remoto)",
+        startDate: "Out/2024",
+        endDate: "Ago/2025",
         description: [
-          "Pagamentos: Implementação de um sistema completo de assinaturas e checkout com Stripe, incluindo billing automático, webhooks e idempotência.",
+          "Reconstrução completa da plataforma fintech do zero para modernizar a arquitetura e melhorar a confiabilidade, entregando um sistema de alta performance que reduziu latência e aumentou a satisfação dos usuários.",
+          "Front-End: Interfaces responsivas com React.js, TypeScript, Chakra UI, Zustand, React Query e Axios.",
+          "Back-End: APIs RESTful com Node.js, Express, Prisma e PostgreSQL; Redis para cache e otimização de performance.",
+          "Sistema de Autocontratação: Módulo de autoatendimento para empréstimos consignados com desconto em folha garantidos pelo FGTS.",
+          "Arquitetura: Camada Backend-for-Frontend (BFF) e integração com RabbitMQ para mensageria assíncrona entre serviços.",
+          "Infraestrutura: Deploy do frontend na Vercel com domínio customizado e DNS via Cloudflare; metodologias ágeis (Scrum/Kanban) e Jira."
+        ]
+      },
+      {
+        name: "Felix CV - Full Stack Software Developer",
+        location: "São Paulo, Brasil (Remoto)",
+        startDate: "Mai/2023",
+        endDate: "Set/2024",
+        description: [
+          "Pagamentos: Implementação de sistema completo de assinaturas e checkout com Stripe, incluindo billing automático, webhooks e idempotência.",
           "Infraestrutura: Integração com AWS S3 para upload e armazenamento de arquivos com presigned URLs e configuração segura de buckets.",
-          "Arquitetura: Desenvolvimento de uma API modular com Nest, TypeScript e integração com MongoDB(NoSQL) via Mongoose.",
+          "Arquitetura: API modular com NestJS, TypeScript, OracleDB (banco principal) e MongoDB (NoSQL) via Mongoose.",
           "Mensageria: Comunicação assíncrona com RabbitMQ para processamento de eventos e notificações.",
           "Integrações: Uso da API da OpenAI para automação de respostas e análise de dados textuais.",
-          "Documentação: Criação de documentação interativa da API com Swagger e configuração de pipelines de build e seed de dados com TypeScript."
+          "Documentação: Documentação interativa da API com Swagger e pipelines de build e seed de dados com TypeScript."
         ]
       }
     ]
@@ -131,38 +161,36 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
 
   projects: [
     {
-      title: "ArchGen",
+      title: "CanteMe",
       isFeatured: true,
-      thumbnail: "/assets/images/ArchGen/ArchGen.png",
-      //githubUrl: "https://github.com/RoParis9/astro-portfolio",
-      //liveUrl: "https://rodrigo-paris-portfolio.vercel.app/",
+      thumbnail: "/assets/images/Canteme/thumbnail.png",
       images: [
-        "/assets/images/ArchGen/ArchGen.png",
-        "/assets/images/ArchGen/ArchGen2.png",
-        "/assets/images/ArchGen/ArchGen3.png",
-      ]
+        "/assets/images/Canteme/thumbnail.png",
+        "/assets/images/Canteme/2026-06-15-122434_hyprshot.png",
+      ],
     },
     {
-      title: "DataChat",
+      title: "Clubi",
       isFeatured: true,
-      thumbnail: "/assets/images/DataChat/DataChat1.png",
-      githubUrl: "https://github.com/RoParis9/DataChat",
-      //liveUrl: "",
+      thumbnail: "/assets/images/Clubi/thumbnail.png",
       images: [
-        "/assets/images/DataChat/DataChat1.png",
-        "/assets/images/DataChat/DataChat2.png",
-        "/assets/images/DataChat/DataChat3.png",
-        "/assets/images/DataChat/DataChat4.png",
-        "/assets/images/DataChat/DataChat5.png"
-      ]
+        "/assets/images/Clubi/thumbnail.png",
+        "/assets/images/Clubi/Clubi.png",
+        "/assets/images/Clubi/Clubi 2.png",
+        "/assets/images/Clubi/Clubi 3.png",
+        "/assets/images/Clubi/Clubi 4.png",
+        "/assets/images/Clubi/Clubi 5.png",
+        "/assets/images/Clubi/Clubi 6.png",
+        "/assets/images/Clubi/Clubi 7.png",
+      ],
     },
     {
       title: "GranaTech",
       isFeatured: true,
-      thumbnail: "/assets/images/GranaTech/GranaTech.png",
-      // githubUrl: "https://app.granatech.com.br",
+      thumbnail: "/assets/images/GranaTech/thumbnail.png",
       liveUrl: "https://app.granatech.com.br",
       images: [
+        "/assets/images/GranaTech/thumbnail.png",
         "/assets/images/GranaTech/GranaTech.png",
         "/assets/images/GranaTech/GranaTech2.png",
         "/assets/images/GranaTech/GranaTech3.png",
@@ -174,24 +202,41 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
         "/assets/images/GranaTech/GranaTech9.png",
         "/assets/images/GranaTech/GranaTech10.png",
         "/assets/images/GranaTech/GranaTech11.png",
-        "/assets/images/GranaTech/GranaTech12.png"
-      ]
+        "/assets/images/GranaTech/GranaTech12.png",
+      ],
     },
     {
-      title: "Clubi",
+      title: "OpenCred",
       isFeatured: true,
-      thumbnail: "/assets/images/Clubi/Clubi.png",
-      //githubUrl: "https://github.com/RoParis9/jobify-page",
-      //liveUrl: "https://jobify-page.vercel.app/",
+      thumbnail: "/assets/images/OpenCred/thumbnail.png",
       images: [
-        "/assets/images/Clubi/Clubi.png",
-        "/assets/images/Clubi/Clubi 2.png",
-        "/assets/images/Clubi/Clubi 3.png",
-        "/assets/images/Clubi/Clubi 4.png",
-        "/assets/images/Clubi/Clubi 5.png",
-        "/assets/images/Clubi/Clubi 6.png",
-        "/assets/images/Clubi/Clubi 7.png"
-      ]
+        "/assets/images/OpenCred/thumbnail.png",
+        "/assets/images/OpenCred/2026-05-17-163015_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163148_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163159_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163223_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163235_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163250_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163258_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163310_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163319_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163406_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163419_hyprshot.png",
+        "/assets/images/OpenCred/2026-05-17-163424_hyprshot.png",
+      ],
+    },
+    {
+      title: "DataChat",
+      isFeatured: true,
+      thumbnail: "/assets/images/DataChat/DataChat1.png",
+      githubUrl: "https://github.com/RoParis9/DataChat",
+      images: [
+        "/assets/images/DataChat/DataChat1.png",
+        "/assets/images/DataChat/DataChat2.png",
+        "/assets/images/DataChat/DataChat3.png",
+        "/assets/images/DataChat/DataChat4.png",
+        "/assets/images/DataChat/DataChat5.png",
+      ],
     },
   ],
 };
