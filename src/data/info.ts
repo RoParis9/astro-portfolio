@@ -229,7 +229,6 @@ Com um histórico comprovado de entrega de projetos web bem-sucedidos desde a co
       title: "DataChat",
       isFeatured: true,
       thumbnail: "/assets/images/DataChat/DataChat1.png",
-      githubUrl: "https://github.com/RoParis9/DataChat",
       images: [
         "/assets/images/DataChat/DataChat1.png",
         "/assets/images/DataChat/DataChat2.png",
